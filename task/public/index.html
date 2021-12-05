@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</link>
+<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body class="bg-dark">
+    <nav class='w-100 bg-dark '>
+        <h1 class="nav-header   py-3 text-white w-100  text-center">Task Manager</h1>
+    </nav>
+    <div class="bg-secondary pb-5  w-100 min-vh-100 pt-5">
+        <section class="main inputSection bg-white  w-50 mx-auto border border-top-0  rounded mb-3 p-2 ">
+            <card class="mt-5 pt-5  ">
+                <h3 class="card-header text-center bg-secondary text-white ">Enter Task
+                </h3>
+                <form class="card-body  w-100 ">
+                    <input placeholder="Enter your Task" type="text" class="inputTask mb-3 w-100 form-control"
+                        name="task">
+                    <input class="mb-5 check text-white" type="checkbox" id="completed" name="completed">
+
+                    <label for="completed text-white">Completed</label><br>
+                    <button class="btn-primary btn btn-block submit">Submit</button>
+                </form>
+            </card>
+        </section>
+        <h4 class='text-white text-center mt-5 mb-3'>TASKS</h4>
+        <section class="  ">
+            <ul class='text-sec w-50 mx-auto  display_task list-unstyled'>
+
+            </ul>
+        </section>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type='text/javascript' src="./index.js"></script>
+
+
+</html>
